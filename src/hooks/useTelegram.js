@@ -6,7 +6,7 @@ export function useTelegram() {
 
     const onClose = () => {
         tg.close()
-      }
+    }
 
 
     const onToggleButton = () => {
@@ -16,13 +16,13 @@ export function useTelegram() {
             tg.MainButton.show()
 
         }
-      }
+    }
 
 
 
     return {
         onClose,
-        onToggleButton
+        onToggleButton,
         tg,
         user: tg.initDataUnsafe?.user
     }
